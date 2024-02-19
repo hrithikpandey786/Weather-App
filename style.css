@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #CDFADB;
+    align-items: center;
+    min-height: 650px;
+}
+
+.card{
+    width: 90%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.search{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search input{
+    width: 70%;
+    border-radius: 25px;
+    padding: 15px 18px;
+    border: none;
+}
+
+.search img{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    line-height: 1.3;
+}
+
+#temp{
+   font-size: 4rem;
+   font-weight: 500;
+   color: #fff;
+}
+
+#cityName{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 30px 0 30px; 
+}
+
+.humidity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+}
+
+.text{
+    align-items:end;
+    color: #fff;
+}
+
+.text #humidityPercent, #windSpeed{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.text #humidityText, #windText{
+    font-size: 13px;
+}
+
+.wind{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    overflow:visible;
+}
+
+.weatherCard{
+    display: none;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    display: none;
+}
+
+.error p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
